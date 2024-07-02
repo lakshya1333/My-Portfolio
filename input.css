@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media (max-width: 768px) {
+   .bg-lime-500 {
+      flex-direction: column;
+      align-items: center;
+    }
+   .pb-0.pt-0.container-fluid.py-5 {
+      width: 100%;
+    }
+   .text-center.sm:text-left.col-md-8.fs-4.py-5 {
+      text-align: center;
+      width: 100%;
+    }
+   .btn.btn-primary.btn-lg {
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    ul {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    li {
+      margin: 0 10px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+    }
+     svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+
+  
+  .dropdown-container {
+    display: none;
+  }
+
+  /* Show the dropdown on mobile screens */
+  @media (max-width: 768px) {
+    .dropdown-container {
+      display: block;
+    }
+  }
+
+  /* Style the toggle button */
+  .toggle-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  /* Style the dropdown menu */
+  .dropdown-menu {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+  }
+
+  /* Show the dropdown menu when the toggle button is clicked */
+  .show-dropdown .dropdown-menu {
+    display: block;
+  }
