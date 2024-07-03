@@ -18,11 +18,10 @@
    .btn.btn-primary.btn-lg {
       width: 100%;
     }
-  }
-  @media (max-width: 768px) {
+  
     ul {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: inherit;
     }
     li {
       margin: 0 10px;
@@ -40,36 +39,3 @@
 
 
   
-  .dropdown-container {
-    display: none;
-  }
-
-  /* Show the dropdown on mobile screens */
-  @media (max-width: 768px) {
-    .dropdown-container {
-      display: block;
-    }
-  }
-
-  /* Style the toggle button */
-  .toggle-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
-  /* Style the dropdown menu */
-  .dropdown-menu {
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    padding: 10px;
-    display: none;
-  }
-
-  /* Show the dropdown menu when the toggle button is clicked */
-  .show-dropdown .dropdown-menu {
-    display: block;
-  }
